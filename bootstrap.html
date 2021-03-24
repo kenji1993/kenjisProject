@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="codigo, html, css, javascript, repositorio, diseño web, aplicaciones web, codepen">
+    <meta name="description" content="repositorio de codigos para diseñadores web, aplicaciones web para tus paginas">
+    <meta name="author" content="Kenji Arakaki">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>The Kenji´s Project</title>
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--SCROLL-->
+    <script src="js/smooth-scroll.min.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script src="https://kit.fontawesome.com/500df033a6.js" crossorigin="anonymous"></script>
+
+
+</head>
+<script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 500,
+        speedAsDuration: true
+    });
+</script>
+
+<body>
+
+
+    <!--BARRA MENU-->
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" style="background: #8046f2;">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><i class="fas fa-home"></i> Inicio</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menu de Navegacion">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+            <div class="collapse navbar-collapse dropdown" id="navbar">
+                <ul class="navbar-nav mr-auto">
+
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link dropdown-toggle" id="menu-categorias" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<i class="fas fa-tools"></i> Tools
+					</a>
+                        <div class="dropdown-menu" aria-labelledby="menu-categorias">
+                            <a href="calculadora.html" class="dropdown-item"><i class="fas fa-calculator" style="color:#000;"></i> Calculadora</a>
+                            <a href="generador.html" class="dropdown-item"><i class="fas fa-key" style="color:#000;"></i> Generador de contraseñas</a>
+                            <a href="#" class="dropdown-item disabled" tabindex="-1" aria-disabled="true">Próximamente</a>
+                            <a href="#" class="dropdown-item disabled" tabindex="-1" aria-disabled="true">Próximamente</a>
+                            <a href="#" class="dropdown-item disabled" tabindex="-1" aria-disabled="true">Próximamente</a>
+                        </div>
+                    </li>
+                    
+                    
+                </ul>
+
+                <button class="switch" id="switch" style="outline: none;">
+            <span class="noc"><i class="fas fa-sun"></i></span>
+            <span class="noc"><i class="fas fa-moon"></i></span>
+        </button>
+            </div>
+        </div>
+
+    </nav>
+
+    <!--LOGO -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start">
+                <img class="logok" src="img/logo.png" >
+            </div>
+            <div class="col-12 col-md-8">
+                <h1 class="titulo">Web Dev Tools <i class="fas fa-mug-hot" style="color: #843ddb;"></i></h1>
+            </div>
+
+        </div>
+
+    </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h4 class="font-weigth-bold-3 mt-3" style="font-size: 45px;color: #843ddb"><u>Bootstrap</u></h4>
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+         <h4>Estructura básica de bootstrap:</h4>
+         </div>
+   
+         <figure class="figure col-10 col-md-8" style="background-color: #f2f2f2; margin:auto;">
+        <pre style="margin-right: 20px;">
+           <code>
+        &lt;!doctype html&gt; 
+        &lt;html lang="es"&gt;
+            &lt;head&gt;
+
+            &lt;meta charset="utf-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+
+             &lt;link rel="stylesheet" href="css/bootstrap.min.css&gt;  
+
+            &lt;title&gt;Bootstrap&lt;/title&gt;
+            &lt;/head&gt;   
+                 
+         &lt;body&gt;
+
+            &lt;h1&gt;Hello, world!&lt;/h1&gt; 
+
+            &lt;script src="js/jquery.min.js"&gt;  &lt;/script&gt;
+            &lt;script src="js/popper.min.js"&gt;  &lt;/script&gt;
+            &lt;script src="js/bootstrap.min.js"&gt;  &lt;/script&gt;  
+
+            &lt;/body&gt;  
+
+            &lt;/html&gt;   
+
+
+
+            </code>
+         </pre>
+    </figure>
+   
+                    
+                </div>
+            </div>
+      
+  
+
+
+    
+
+    <div class="footer">
+        <div class="container">
+
+            <a href="https://www.linkedin.com/in/kenji-arakaki-75026112a/" style="color:#fff; text-decoration: none;" title="Linkedin">
+                <i class="fab fa-linkedin" style="margin: 10px; font-size:40px;"></i>Linkedin
+            </a>
+			<a href="https://kenjiarakaki1993.web.app/" style="color:#fff; text-decoration: none;" title="Portfolio"><i class="far fa-folder" style="margin: 10px; font-size:40px;"></i>Portfolio
+			</a>
+            <a href="mailto:kenji.arakaki93@gmail.com" style="color:#fff; text-decoration: none;" title="kenji.arakaki93@gmail.com"><i class="far fa-envelope" style="margin: 10px; font-size:40px;"></i>E-mail
+            </a>
+            
+        </div>
+    </div>
+
+
+    <script src="js/cards.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/nocturno.js"></script>
+    <script src="js/formulario.js"></script>
+
+</body>
+
+</html>

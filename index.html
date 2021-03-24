@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="codigo, html, css, javascript, repositorio, diseño web, aplicaciones web, codepen">
+    <meta name="description" content="repositorio de codigos para diseñadores web, aplicaciones web para tus paginas">
+    <meta name="author" content="Kenji Arakaki">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>The Kenji´s Project</title>
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--SCROLL-->
+    <script src="js/smooth-scroll.min.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script src="https://kit.fontawesome.com/500df033a6.js" crossorigin="anonymous"></script>
+
+
+</head>
+<script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 500,
+        speedAsDuration: true
+    });
+</script>
+
+<body>
+
+
+    <!--BARRA MENU-->
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" style="background: #8046f2;">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><i class="fas fa-home"></i> Inicio</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menu de Navegacion">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+            <div class="collapse navbar-collapse dropdown" id="navbar">
+                <ul class="navbar-nav mr-auto">
+
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link dropdown-toggle" id="menu-categorias" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<i class="fas fa-tools"></i> Tools
+					</a>
+                        <div class="dropdown-menu" aria-labelledby="menu-categorias">
+                            <a href="calculadora.html" class="dropdown-item"><i class="fas fa-calculator" style="color:#000;"></i> Calculadora</a>
+                            <a href="generador.html" class="dropdown-item"><i class="fas fa-key" style="color:#000;"></i> Generador de contraseñas</a>
+                            <a href="#" class="dropdown-item disabled" tabindex="-1" aria-disabled="true">Próximamente</a>
+                            <a href="#" class="dropdown-item disabled" tabindex="-1" aria-disabled="true">Próximamente</a>
+                            <a href="#" class="dropdown-item disabled" tabindex="-1" aria-disabled="true">Próximamente</a>
+                        </div>
+                    </li>
+                    
+                    
+                </ul>
+
+                <button class="switch" id="switch" style="outline: none;">
+            <span class="noc"><i class="fas fa-sun"></i></span>
+            <span class="noc"><i class="fas fa-moon"></i></span>
+        </button>
+            </div>
+        </div>
+
+    </nav>
+
+    <!--LOGO -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start">
+                <img class="logok" src="img/logo.png" alt="">
+            </div>
+            <div class="col-12 col-md-8">
+                <h1 class="titulo">Web Dev Tools <i class="fas fa-mug-hot" style="color: #843ddb;"></i></h1>
+            </div>
+
+        </div>
+
+    </div>
+    <!--CARDS-->
+
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-12 col-md-3 mt-5" id="cards">
+                <div class="card border-dark">
+                    <img src="img/html.png" class="card-img-top img-fluid mt-2"  alt="HTML">
+                    <div class="card-body">
+                        <h3 class="card-title font-weight-bold">HTML</h3>
+                        <p class="card-text ">Es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet. Se trata de la siglas que corresponden a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto.</p>
+                        <a href="https://developer.mozilla.org/es/docs/Web/HTML" class="btn btn-danger btn-block disabled" tabindex="-1" aria-disabled="true">Próximamente</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 mt-5">
+                <div class="card border-dark">
+                    <img src="img/css.png" class="card-img-top img-fluid mt-2" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title font-weight-bold">CSS</h3>
+                        <p class="card-text">Es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.</p>
+                        <a href="#" class="btn btn-primary btn-block disabled" tabindex="-1" aria-disabled="true">Próximamente</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-3 mt-5">
+                <div class="card border-dark">
+                    <img src="img/javascript.png" class="card-img-top img-fluid mt-2" style="padding-top:15px">
+                    <div class="card-body">
+                        <h3 class="card-title font-weight-bold">Javascript</h3>
+                        <p class="card-text">Es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos, ​ basado en prototipos, imperativo, débilmente tipado y dinámico.</p>
+                        <a href="#" class="btn btn-warning btn-block disabled" tabindex="-1" aria-dismis="true">Próximamente</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 mt-5">
+                <div class="card border-dark">
+                    <img src="img/bootstrap.png" class="card-img-top img-fluid mt-2" style="padding: 20px;" >
+                    <div class="card-body">
+                        <h3 class="card-title font-weight-bold">Bootstrap</h3>
+                        <p class="card-text">Es una biblioteca multiplataforma o conjunto de herramientas de código abierto para diseño de sitios y aplicaciones web. Contiene plantillas de diseño con tipografía, formularios, botones, cuadros, menús de navegación y otros elementos de diseño basado en HTML y CSS, así como extensiones de JavaScript adicionales. </p>
+                        <a href="bootstrap.html" class="btn btn-block booton" >Ver</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div class="footer">
+        <div class="container">
+
+            <a href="https://www.linkedin.com/in/kenji-arakaki-75026112a/" style="color:#fff; text-decoration: none;" title="Linkedin">
+                <i class="fab fa-linkedin" style="margin: 10px; font-size:40px;"></i>Linkedin
+            </a>
+			<a href="https://kenjiarakaki1993.web.app/" style="color:#fff; text-decoration: none;" title="Portfolio"><i class="far fa-folder" style="margin: 10px; font-size:40px;"></i>Portfolio
+			</a>
+            <a href="mailto:kenji.arakaki93@gmail.com" style="color:#fff; text-decoration: none;" title="kenji.arakaki93@gmail.com"><i class="far fa-envelope" style="margin: 10px; font-size:40px;"></i>E-mail
+            </a>
+            
+        </div>
+    </div>
+
+
+    <script src="js/cards.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/nocturno.js"></script>
+    <script src="js/formulario.js"></script>
+
+</body>
+
+</html>
